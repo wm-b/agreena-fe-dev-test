@@ -31,7 +31,7 @@ export const App: FC = () => {
 
   return (
     <div className="app">
-      <BrowserRouter>
+      <BrowserRouter basename="certificates">
         <CertificatesProvider>
           <Routes>
             <Route path="*" element={<MainLayout />}>
