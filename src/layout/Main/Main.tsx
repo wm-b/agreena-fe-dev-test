@@ -11,7 +11,7 @@ export const MainLayout: FC = () => {
         <nav>
           <button
             className={
-              window.location.pathname.endsWith("/certificates")
+              window.location.pathname.includes("/certificates")
                 ? s.selected
                 : ""
             }
@@ -21,7 +21,7 @@ export const MainLayout: FC = () => {
           </button>
           <button
             className={
-              window.location.pathname.endsWith("/favourites") ? s.selected : ""
+              window.location.pathname.includes("/favourites") ? s.selected : ""
             }
             onClick={() => navigate("./favourites")}
           >
