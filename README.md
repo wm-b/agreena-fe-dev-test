@@ -4,7 +4,7 @@ Frontend Developer Recruitment Test by Will Baines for Agreena
 
 ### Link to Hosted Application
 
-The application is hosted for your convinience, please click here to access it: [https://wmb.dev/agreena](https://wmb.dev/agreena)
+The application is hosted for your convinience, please click here to access it: [https://wmb.dev/certificates](https://wmb.dev/certificates)
 
 ### Running the application locally
 
