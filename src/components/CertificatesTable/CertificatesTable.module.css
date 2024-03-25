@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.container > header,
+.container > ol > li {
+  display: flex;
+  gap: 20px;
+}
+
+.container > header {
+  color: var(--light-text-colour);
+  padding: 10px 80px;
+}
+
+.container > header > h5 {
+  margin: 0;
+}
+
+.container > footer {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 10px 60px;
+}
+
+.container > footer > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.container > footer > div > input {
+  width: 30px;
+}
+
+.container > ol {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+  appearance: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 60px;
+  overflow-y: auto;
+}
+
+.container > ol > li {
+  padding: 16px 20px;
+  background-color: var(--foreground-colour);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container > ol > li > :is(div, button) {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.container > ol > li > :is(div, button):hover .tooltip {
+  opacity: 1;
+  top: 35px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  top: 40px;
+  opacity: 0;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: var(--dark-background-colour);
+  color: var(--foreground-colour);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  transition:
+    top 0.15s,
+    opacity 0.15s;
+  pointer-events: none;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: var(--dark-background-colour);
+}
+
+.container > ol > li > :is(div, button) > span:not(.tooltip) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.id,
+.originator,
+.owner {
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.id {
+  display: flex;
+}
+
+.id > img {
+  width: 20px;
+  height: 20px;
+  filter: var(--accent-colour-filter);
+}
+
+.originatorCountry {
+  min-width: 11%;
+  max-width: 11%;
+}
+
+.ownerCountry {
+  min-width: 9%;
+  max-width: 9%;
+}
+
+.status {
+  width: auto;
+  margin-right: auto;
+}
+
+.favourite {
+  min-width: 30px;
+  max-width: 30px;
+}
+
+.favourite > button > img {
+  filter: var(--accent-colour-filter);
+}
