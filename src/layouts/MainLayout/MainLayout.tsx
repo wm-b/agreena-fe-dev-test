@@ -1,4 +1,4 @@
-import s from "./Main.module.css"
+import s from "./MainLayout.module.css"
 import { FC } from "react"
 import { Outlet, useNavigate } from "react-router-dom"
 

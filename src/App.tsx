@@ -3,7 +3,7 @@ import { FC, useCallback, useEffect } from "react"
 import { CertificatesProvider } from "state/Certificates"
 import { Certificates, Favourites } from "features"
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
-import { MainLayout } from "layout/Main"
+import { MainLayout } from "layouts/MainLayout"
 
 export const App: FC = () => {
   const setMinEffectiveWidth = useCallback(() => {
