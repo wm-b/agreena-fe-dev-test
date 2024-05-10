@@ -1,6 +1,4 @@
-# Agreena FE Dev Test
-
-Frontend Developer Recruitment Test by Will Baines for Agreena
+# Eco Certificates Viewer
 
 ### Link to Hosted Application
 
